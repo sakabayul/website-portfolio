@@ -1,23 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saka Bayu Laksono</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
     <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+        <div class="kontener">
+            <div class="logo">
+                <h2>Saka <span>Bayu</span></h2>
+            </div>
+            <ul class="hidden">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+            <a href="#contact" class="button">Contact me</a>
+        </div>
     </nav>
+
+    <!-- Header -->
+    <header id="home">
+        <div class="kontener">
+            <div class="introduce">
+                <p>Hai, Iam <span>Saka Bayu Laksono</span></p>
+                <h2>Iam <span>Pemrograman</span></h2>
+                <p class="mb-5">I work on full time and freelance</p>
+                <a href="#portfolio" class="button">My Portfolio</a>
+            </div>
+            <div class="hero">
+                <img src="" alt="">
+            </div>
+        </div>
+    </header>
+
+    <!-- Container Main -->
     <main>
-      <h1>Home page</h1>
+        <div class="kontener kontener-main">
+            <!-- Container Section -->
+            <section id="about">
+                <h2>About</h2>
+                <p>I possess expertise in Web Development and Programming, having successfully completed various tasks
+                    during my academic tenure. These include designing E-Commerce websites, Landing Pages, Business
+                    websites, Personal websites, and more. I am enthusiastic about contributing to the creation of
+                    innovative web solutions. While there are still aspects of the field that I have yet to master, I am
+                    committed to continuous learning and enhancing my programming skills. I am actively seeking
+                    challenging roles in Programming where I can further apply and expand my knowledge.</p>
+            </section>
+
+            <section class="skill" id="skill">
+                <h2>Skill</h2>
+                <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true"
+                    centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50"
+                    coverflow-effect-stretch="0" coverflow-effect-depth="100" coverflow-effect-modifier="1"
+                    coverflow-effect-slide-shadows="true">
+                    <swiper-slide><i class="fa-brands fa-html5"></i></swiper-slide>
+                    <swiper-slide><i class="fa-brands fa-css3-alt"></i></swiper-slide>
+                    <swiper-slide><i class="fa-brands fa-js"></i></swiper-slide>
+                    <swiper-slide><i class="fa-brands fa-react"></i></swiper-slide>
+                    <swiper-slide><i class="fa-brands fa-angular"></i></swiper-slide>
+                    <swiper-slide><i class="fa-brands fa-php"></i></swiper-slide>
+                    <swiper-slide><i class="fa-brands fa-laravel"></i></swiper-slide>
+                    <swiper-slide><i class="fa-brands fa-node"></i></swiper-slide>
+                    <swiper-slide><i class="fa-brands fa-bootstrap"></i></swiper-slide>
+                </swiper-container>
+            </section>
+
+            <section id="gallery">
+                <div class="kontainer">
+                    <h2>Gallery UI/UX</h2>
+                    <article>
+                            <div class="gallery">
+                                <img src="./image/Desktop 1.png" alt="">
+                            </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="portfolio">
+                <h2>Portfolio</h2>
+                <div class="col-4 my-4">
+                    <div class="list-group list-group-horizontal" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-laravel-list"
+                            data-bs-toggle="list" href="#list-laravel" role="tab"
+                            aria-controls="list-laravel">Laravel</a>
+                        <a class="list-group-item list-group-item-action" id="list-react-list" data-bs-toggle="list"
+                            href="#list-react" role="tab" aria-controls="list-react">React.js</a>
+                        <a class="list-group-item list-group-item-action" id="list-next-list" data-bs-toggle="list"
+                            href="#list-next" role="tab" aria-controls="list-next">Next.js</a>
+                        <a class="list-group-item list-group-item-action" id="list-angular-list" data-bs-toggle="list"
+                            href="#list-angular" role="tab" aria-controls="list-angular">Angular</a>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-laravel" role="tabpanel"
+                            aria-labelledby="list-laravel-list">
+                            <!-- Main Container -->
+                            <div class="kontener">
+                                <!-- Container Cards -->
+                                <div class="container-cards">
+                                    <!-- Main Card Start -->
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">View Detail</button>
+                                        </div>
+                                    </div>
+                                    <!-- Main Card End -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-react" role="tabpanel" aria-labelledby="list-react-list">
+                            <!-- Main Container -->
+                            <div class="kontener">
+                                <!-- Container Cards -->
+                                <div class="container-cards">
+                                    <!-- Main Card Start -->
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">View Detail</button>
+                                        </div>
+                                    </div>
+                                    <!-- Main Card End -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-next" role="tabpanel" aria-labelledby="list-next-list">
+                            <!-- Main Container -->
+                            <div class="kontener">
+                                <!-- Container Cards -->
+                                <div class="container-cards">
+                                    <!-- Main Card Start -->
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">View Detail</button>
+                                        </div>
+                                    </div>
+                                    <!-- Main Card End -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-angular" role="tabpanel"
+                            aria-labelledby="list-angular-list">
+                            <!-- Main Container -->
+                            <div class="kontener">
+                                <!-- Container Cards -->
+                                <div class="container-cards">
+                                    <!-- Main Card Start -->
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./image/Desktop 1.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Website E-Commerce</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">Views Detail</button>
+                                        </div>
+                                    </div>
+                                    <!-- Main Card End -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
-  </body>
+
+    <footer>
+        <div class="footer">
+            <p>Copyright © 2024. Design By | <a href="https://github.com/sakabayul" target="_blank"><span>Saka Bayu Laksono</span></a></p>
+        </div>
+    </footer>
+
+
+
+    <!-- Modal Portfolio Angular-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Website E-Commerce Use Freamwork Angular</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body container-modal">
+                    <div class="desktop mb-4">
+                        <h2 class="mt-5">Responsive Desktop</h2>
+                        <img class="img-desktop" src="./image/Desktop 1.png" alt="">
+                        <img class="img-desktop" src="./image/Desktop 2.png" alt="">
+                    </div>
+                    <div class="ipad mb-4">
+                        <h2 class="mt-5">Responsive Tablet</h2>
+                        <img class="img-ipad" src="./image/IPad Pro 1.png" alt="">
+                        <img class="img-ipad" src="./image/IPad Pro 2.png" alt="">
+                    </div>
+                    <div class="smartphone mb-4">
+                        <h2 class="mt-5">Responsive Smartphone</h2>
+                        <img class="img-smartphone" src="./image/Samsung Galaxy S20 Ultra 1.png" alt="">
+                        <img class="img-smartphone" src="./image/Samsung Galaxy S20 Ultra 2.png" alt="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">View Project</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/ffa3ed8b39.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

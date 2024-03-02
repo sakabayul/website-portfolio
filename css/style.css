@@ -1,0 +1,297 @@
+/* Global Style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    scroll-margin-top: 5rem;
+}
+:root{
+    /* Font Color */
+    --font-color-4:#3a3f59;
+    --font-color-3:#ec6b58;
+    --font-color-2:#f9ad66;
+    --font-color-1:#ede6ce;
+
+    /* Background Color */
+    --background-color-1:#3a3f59;
+    --background-color-2:#ec6b58;
+    --background-color-3:#f9ad66;
+    --background-color-4:#ede6ce;
+
+    /* Font Size */
+    --title-font-1: 2rem;
+    --title-font-2: 1rem;
+    --title-font-3: .7rem;
+}
+html{
+    font-size: 100%;
+}
+body{
+    background-color: var(--background-color-1);
+}
+
+
+/* Main Style */
+.kontener{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button{
+    padding: .4rem .8rem;
+    color: var(--font-color-4);
+    background-color: var(--background-color-3);
+    border-radius: .5rem;
+    text-decoration: none;
+}
+.button:hover{
+    color: var(--font-color-4);
+    background-color: var(--background-color-4);
+}
+.button:active{
+    transform: scale(.97);
+}
+
+
+
+/* Navbar */
+nav{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: var(--background-color-1);
+}
+nav h2{
+    font-weight: bold;
+    color: var(--font-color-2);
+    font-size: var(--title-font-1);
+    cursor: pointer;
+    margin-top: .8rem;
+}
+nav h2:hover{
+    color: var(--font-color-1);
+}
+nav ul{
+    display: flex;
+    margin-top: 1rem;
+}
+nav ul a{
+    padding: 1.5rem;
+    text-decoration: none;
+    font-size: var(--title-font-2);
+    color: var(--font-color-1);
+}
+nav ul a:hover{
+    color: var(--font-color-2);
+}
+
+
+
+/* Header */
+header{
+    display: flex;
+    justify-content: center;
+    min-height: 50vh;
+}
+header p, h2{
+    color: var(--font-color-1);
+    padding: 0;
+    margin-bottom: .2rem;
+}
+span{
+    color: var(--font-color-3);
+}
+
+
+
+/* Main */
+main{
+    display: flex;
+    justify-content: center;
+}
+.kontener-main{
+    display: flex;
+    flex-direction: column;
+}
+section{
+    margin-bottom: 3rem;
+}
+section h2{
+    display: flex;
+    justify-content: center;
+    color: var(--font-color-3);
+}
+section p{
+    color: var(--font-color-1);
+}
+
+
+
+/* Main Gallery */
+article .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+article .gallery img{
+    flex: 1 0 auto;
+    width: 350px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+
+
+/* Main Portfolio */
+.container-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    min-width: 350px;
+    overflow: hidden;
+}
+.container-cards .card img{
+    height: auto;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.card p{
+    color: var(--font-color-4);
+}
+
+
+
+/* Swiper For Skill*/
+swiper-container {
+    width: 100%;
+    max-width: 24rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+}
+swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 25rem;
+}
+swiper-slide i {
+    font-size: 15rem;
+    display: block;
+    width: 100%;
+    overflow:hidden;
+}
+.fa-html5{color: rgb(226, 90, 0);}
+.fa-css3-alt{color: rgb(39, 89, 255);}
+.fa-js{color: rgb(203, 218, 0);}
+.fa-react{color: rgb(0, 183, 255);}
+.fa-angular{color: rgb(179, 0, 0);}
+.fa-php{color: rgb(40, 39, 121);}
+.fa-laravel{color: rgb(189, 0, 0);}
+.fa-node{color: rgb(42, 173, 53);}
+.fa-bootstrap{color: rgb(72, 0, 206);}
+
+
+
+/* Container Modal Portfolio */
+.container-modal{
+    display: flex;
+    flex-direction: column;
+}
+/* Desktop */
+.container-modal .desktop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.container-modal .desktop h2{
+    color: var(--font-color-4);
+}
+.container-modal .img-desktop{
+    width: 80%;
+    height: auto;
+}
+/* Ipad */
+.container-modal .ipad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.container-modal .ipad h2{
+    color: var(--font-color-4);
+}
+.container-modal .img-ipad{
+    width: 50%;
+    height: auto;
+}
+/* Smartphone */
+.container-modal .smartphone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.container-modal .smartphone h2{
+    color: var(--font-color-4);
+}
+.container-modal .img-smartphone{
+    width: 30%;
+    height: auto;
+}
+
+
+
+/* Component Footer */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.514);
+}
+.footer p, .footer a{
+    color: var(--font-color-1);
+    text-decoration: none;
+}
+.footer span{
+    color: var(--font-color-3);
+}
+
+
+
+/* Responsive */
+@media screen and (max-width:768px) {
+    html{
+        font-size: 90%;
+    }
+    .hidden{
+        display: none;
+    }
+    swiper-slide i {
+        font-size: 10rem;
+    }
+    .kontener{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
